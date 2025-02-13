@@ -2,5 +2,61 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
+.homepage-container {
+    display: grid;
+    grid-template-columns: repeat(6,2fr);
+    grid-template-rows: repeat(6,2fr);
+    grid-gap: 3px;
+    height: 100vh;
+}
+.background-image{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+.navbar-container{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    background-color: navy;
+    opacity: 0.3;
+
+}
+
+.nav-list {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list button {
+    margin-right: 10px;
+    color: white;
+}
+
+
+.works {
+    z-index: 1;
+    grid-column-start: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+
+.folder-icon:active{
+    color: white
+}
+.nav-left{
+    margin-left: 10px;
+    display: flex;
+}
+.nav-right{
+    margin-right: 100px;
+}
