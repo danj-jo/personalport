@@ -7,6 +7,8 @@ import {
 } from "@remix-run/react";
 import "./tailwind.css";
 import "./global.css";
+import "modern-normalize"
+import Navbar from "../app/components/Navbar";
 export function Layout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en">
@@ -17,6 +19,7 @@ export function Layout({children}: { children: React.ReactNode }) {
             <Links/>
         </head>
         <body>
+        <Navbar/>
         {children}
         <ScrollRestoration/>
         <Scripts/>
