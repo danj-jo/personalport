@@ -31,14 +31,14 @@ export default function Index() {
     <div className="homepage-container">
             <div className="works">
                 <button>
-                    <img className="folder-icon" src="../../public/folder.png" alt="projects"/>
+                    <img className="folder-icon" src="/folder.png" alt="projects"/>
                     <span style={{color: "white", fontSize: ".5em"}}> PROJECTS </span>
                 </button>
 
         </div>
             <div className="resume">
                     <button>
-                        <img className="resume-icon" src="../../public/file.png" alt="resume"/>
+                        <img className="resume-icon" src="/file.png" alt="resume"/>
                         <span style={{color: "white", fontSize: ".5em"}}> RESUME </span>
                     </button>
 
@@ -58,16 +58,16 @@ export default function Index() {
 
         <div className={"dock-items"}>
         <a href="https://github.com/danj-jo" className="github-button dock-button">
-                <img src="../../public/github-mark-white.svg" alt="background"/>
+                <img src="/github-mark-white.svg" alt="background"/>
             </a>
             <a href="https://www.linkedin.com/in/danj-jo/" className="linkedin-button dock-button">
-                <img src="../../public/linkedin.png" alt="background"/>
+                <img src="/linkedin.png" alt="background"/>
             </a>
             <button className="gmail-button dock-button" onClick={showModal}>
-                <img src="../../public/gmail.png" alt="background"/>
+                <img src="/gmail.png" alt="background"/>
             </button>
             <button className="music-button dock-button">
-                <img src="../../public/player.png" alt="background"/>
+                <img src="/player.png" alt="background"/>
             </button>
         </div>
 
